@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mHFEphWkkLY=",
+  "dgSpecHash": "6xdDd82R8mI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Анютка\\source\\repos\\WebAppStocker_1\\WebAppStocker_1.csproj",
+  "projectFilePath": "C:\\Users\\Анютка\\Desktop\\лекції\\Розробка вебдодатків з використанням технології ASP.NET Core\\для екзамену\\WebAppStocker_1\\WebAppStocker_1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Анютка\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Анютка\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

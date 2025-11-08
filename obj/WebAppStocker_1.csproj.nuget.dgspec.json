@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Анютка\\source\\repos\\WebAppStocker_1\\WebAppStocker_1.csproj": {}
+    "C:\\Users\\Анютка\\Desktop\\лекції\\Розробка вебдодатків з використанням технології ASP.NET Core\\для екзамену\\WebAppStocker_1\\WebAppStocker_1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Анютка\\source\\repos\\WebAppStocker_1\\WebAppStocker_1.csproj": {
+    "C:\\Users\\Анютка\\Desktop\\лекції\\Розробка вебдодатків з використанням технології ASP.NET Core\\для екзамену\\WebAppStocker_1\\WebAppStocker_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Анютка\\source\\repos\\WebAppStocker_1\\WebAppStocker_1.csproj",
+        "projectUniqueName": "C:\\Users\\Анютка\\Desktop\\лекції\\Розробка вебдодатків з використанням технології ASP.NET Core\\для екзамену\\WebAppStocker_1\\WebAppStocker_1.csproj",
         "projectName": "WebAppStocker_1",
-        "projectPath": "C:\\Users\\Анютка\\source\\repos\\WebAppStocker_1\\WebAppStocker_1.csproj",
+        "projectPath": "C:\\Users\\Анютка\\Desktop\\лекції\\Розробка вебдодатків з використанням технології ASP.NET Core\\для екзамену\\WebAppStocker_1\\WebAppStocker_1.csproj",
         "packagesPath": "C:\\Users\\Анютка\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Анютка\\source\\repos\\WebAppStocker_1\\obj\\",
+        "outputPath": "C:\\Users\\Анютка\\Desktop\\лекції\\Розробка вебдодатків з використанням технології ASP.NET Core\\для екзамену\\WebAppStocker_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Анютка\\AppData\\Roaming\\NuGet\\NuGet.Config",
