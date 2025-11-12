@@ -1,0 +1,26 @@
+﻿@model WebAppStocker_1.Entities.FooterBrand
+
+<div class="col-md-6 col-lg-6 col-xl-4">
+    <div class="footer-item">
+        <a href="index.html" class="p-0">
+            <h4 class="text-white"><i class="@Model.LogoIcon me-3"></i>@Model.LogoText</h4>
+        </a>
+        <p class="mb-4">@Model.Description</p>
+        <div class="d-flex">
+            <a href="@Model.AppStore.Url" class="bg-primary d-flex rounded align-items-center py-2 px-3 me-2">
+                <i class="@Model.AppStore.Icon text-white"></i>
+                <div class="ms-3">
+                    <small class="text-white">@Model.AppStore.SmallText</small>
+                    <h6 class="text-white">@Model.AppStore.StoreName</h6>
+                </div>
+            </a>
+            <a href="@Model.GooglePlay.Url" class="bg-dark d-flex rounded align-items-center py-2 px-3 ms-2">
+                <i class="@Model.GooglePlay.Icon text-primary"></i>
+                <div class="ms-3">
+                    <small class="text-white">@Model.GooglePlay.SmallText</small> <!-- Виправлено клас -->
+                    <h6 class="text-white">@Model.GooglePlay.StoreName</h6>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

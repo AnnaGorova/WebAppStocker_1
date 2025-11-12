@@ -1,0 +1,13 @@
+﻿@using WebAppStocker_1.Entities
+@{
+    var optionModel = (Option)Model;
+}
+
+
+<a href="" class="navbar-brand p-0">
+    <h1 class="text-primary">
+        @Html.Raw(optionModel.Key)
+        @optionModel.Value
+    </h1>
+   
+</a>

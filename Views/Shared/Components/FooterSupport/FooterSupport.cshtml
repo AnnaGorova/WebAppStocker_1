@@ -1,0 +1,12 @@
+﻿@model WebAppStocker_1.Entities.FooterSupport
+
+<div class="col-md-6 col-lg-6 col-xl-3">
+    <div class="footer-item">
+        <h4 class="text-white mb-4">@Model.Title</h4>
+        @foreach (var link in Model.Links)
+        {
+            <a href="@link.Icon"><i class="fas fa-angle-right me-2"></i> @link.Text</a>
+        }
+              
+    </div>
+</div>

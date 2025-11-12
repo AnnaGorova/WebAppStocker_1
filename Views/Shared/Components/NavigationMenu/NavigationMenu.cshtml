@@ -1,0 +1,29 @@
+﻿@using WebAppStocker_1.Entities
+<div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav ms-auto py-0">
+
+        @foreach (Navigate navElement in Model)
+        {
+            @if(navElement.ParentID == null && navElement.Childs.Count == 0)
+            {
+                <a href="@navElement.Href" class="nav-item nav-link">@navElement.Title</a>
+            }else
+            {
+                <div class="nav-item dropdown">
+                    <a href="@navElement.Href" class="nav-link" data-bs-toggle="dropdown">
+                        <span class="dropdown-toggle">@navElement.Title</span>
+                    </a>
+                    <div class="dropdown-menu m-0">
+
+                        @foreach(Navigate oneChild in navElement.Childs)
+                        {
+                            <a href="@oneChild.Href" class="dropdown-item">@oneChild.Title</a>
+                        }
+                       
+                    </div>
+                </div>
+            }
+        }
+
+    </div>
+</div>

@@ -1,0 +1,50 @@
+﻿@model List<WebAppStocker_1.Entities.TopBarItem>
+
+<div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+    <div class="row gx-0 align-items-center">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+            <div class="d-flex flex-wrap">
+                @foreach (var item in Model.Where(x => x.Type == "contact").OrderBy(x => x.Order))
+                {
+                    <a href="@item.Href" class="text-muted small me-4">
+                        @Html.Raw(item.Icon)@item.Value
+                    </a>
+                }
+                
+            </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+                @foreach (var item in Model.Where(x => x.Type == "auth" && x.SubType != "dashboard").OrderBy(x => x.Order))
+                {
+                    <a href="@item.Href"><small class="me-3 text-dark">@Html.Raw(item.Icon)@item.Value</small></a>
+                }
+               
+                <div class="dropdown">
+                    @{
+                        var dashboardBtn = Model.FirstOrDefault(x => x.Type == "auth" && x.SubType == "dashboard");
+                    }
+                    @if (dashboardBtn != null)
+                    {
+                        <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown">
+                            <small>@Html.Raw(dashboardBtn.Icon)@dashboardBtn.Value</small>
+                        </a>
+
+                        <div class="dropdown-menu rounded">
+                            @foreach (var item in Model.Where(x => x.Type == "dashboard").OrderBy(x => x.Order))
+                            {
+                                <a href="@item.Href" class="dropdown-item">
+                                    @Html.Raw(item.Icon)@item.Value
+                                </a>
+                            }
+                        </div>
+
+
+                    }
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
